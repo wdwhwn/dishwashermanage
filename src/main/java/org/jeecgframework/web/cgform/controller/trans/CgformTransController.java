@@ -114,10 +114,11 @@ public class CgformTransController {
 		if(GENERATE_FORM_IDS!=null && GENERATE_FORM_IDS.equals(id)){
 			j.setMsg("不允许重复生成!");
 			j.setSuccess(false);
-			return j;
+			//return j;
 		}else{
 			GENERATE_FORM_IDS = id;
 		}
+		GENERATE_FORM_IDS = id;
 
 		String ids[] = id.split(",");
 		String no = "";
